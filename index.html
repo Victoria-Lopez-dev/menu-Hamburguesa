@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Menu desplegable</title>
+</head>
+<body>
+
+<nav>
+ 
+        <img src="logo.jpeg" alt="logo del podcast" >
+
+        <div class="hamburguesa">
+            <label for="hamb"><img src="hamburguesa.png" alt="hamburguesa"></label>
+            
+
+        </div>
+    
+        <ul class="menu">
+
+            <li class="menu_item nosotros" >
+                <a href="#" >NOSOTRO</a>
+                 <!-- tambien podemos hacer que el menu se despliegue al hacer hover-->
+                <ul class="submenuNosotros">
+                    <li class="nosotros-item"><a href="#">Submenu 1</a></li>
+                    <li class="nosotros-item"><a href="#">Submenu 2</a></li>
+                    <li class="nosotros-item"><a href="#">Submenu 3</a></li>
+                </ul>
+            </li>
+            <li class="menu_item">
+                
+                <label for="item-productos">PRODUCTOS</label>
+                <!-- o podemos poner el menu dentro del item -->
+                <input type="checkbox" name="item-productos" id="item-productos"/>
+                    <ul class="submenu_productos">
+                        <li class="productos_item"><a href="#">Alimento</a></li>
+                        <li class="productos_item"><a href="#">Accesorio</a>s</li>
+                    </ul>
+            </li>
+            <li class="menu_item"><a href="#">DONDE ENCONTRARNOS</a></li>
+        </ul> 
+</nav> 
+<!-- o podemos poner el menu por fuera del navegador(util para el mobile) -->
+        <input type="checkbox" name="hamb" id="hamb">           
+        <ul class="submenu_productos2">
+            <li class="productos_item"><a href="#">Alimento</a></li>
+            <li class="productos_item"><a href="#">Accesorio</a>s</li>
+        </ul>
+
+        <div class="texto-shades">
+            <img src="gatito.jpeg" alt="gatito" id="gatito">
+            <p class="texto-gatito">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident earum exercitationem consequatur expedita, velit harum nihil. Quos veritatis eveniet, id, aliquid ut esse doloribus natus veniam harum voluptatibus, accusantium minus.Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident earum exercitationem consequatur expedita, velit harum nihil. Quos veritatis eveniet, id, aliquid ut esse doloribus natus veniam harum voluptatibus, accusantium minus.Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident earum exercitationem consequatur expedita, velit harum nihil. Quos veritatis eveniet, id, aliquid ut esse doloribus natus veniam harum voluptatibus, accusantium minus.</p>
+        </div>
+</body>
+</html>

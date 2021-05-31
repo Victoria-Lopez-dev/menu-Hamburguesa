@@ -1,0 +1,110 @@
+body{
+   background-color: lightgoldenrodyellow;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: pink;
+    height: 80px;
+    padding: 0px 20px;
+}
+
+img{
+    margin:8px;
+    width: 62px;
+}
+
+.menu{
+    background-color: lightblue;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 40%;
+}
+li{
+    list-style: none;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.menu_item{
+    width: 30%;
+}
+.submenu_productos{
+    background-color: teal;
+    display: none;
+    width: 100%;
+    padding: 0;
+    
+}
+.submenu_productos2{
+    display: none;
+    width: 100%;
+    background-color: teal;
+}
+.hamburguesa{
+    display: none;
+}
+
+input{
+    display: none;
+}
+
+#item-productos:checked + .submenu_productos{
+    display: block
+    
+}
+
+
+.submenuNosotros{
+    display: none;
+    background-color: teal;
+    text-align: center;
+    padding: 0;
+}
+
+.nosotros:hover >.submenuNosotros{
+    display: block;
+	
+}
+
+
+.texto-shades{
+    background-color: blanchedalmond;
+    margin: 200px auto;
+    display: flex;
+    justify-self: center;
+    width: 600px;
+    border: 2px solid violet;
+    
+}
+
+#gatito{
+    width: 200px;
+    border: 2px solid black;
+    float: left;
+    clip-path: circle(43% at center);
+    
+}
+.texto-gatito{
+    clip-path: polygon(50% 0,100% 50% , 50% 100%, 0 50%);
+}
+
+
+@media (max-width:768px){
+
+    .menu{
+        display: none;
+    }
+  
+    .hamburguesa {
+        display: block;
+        
+    }
+    #hamb:checked + .submenu_productos2{
+        display: block;
+    }
+}
